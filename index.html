@@ -3,14 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Eric Scott LLC at ericscottllc.com">
+    <meta name="description" content="Eric Scott LLC - Empowering Agricultural Efficiency through Data and Strategy">
     <title>Eric Scott LLC</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Contact Me</h1>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Eric Scott LLC Logo">
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" style="background: url('background.jpg') no-repeat center center; background-size: cover;">
+        <h1>Welcome to Eric Scott LLC</h1>
+        <p>Empowering Agricultural Efficiency through Data and Strategy</p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Accomplished supply chain professional with over 6 years of experience specializing in the optimization of operations and driving efficiencies in both direct and indirect procurement. Proven track record in contract negotiation, development, and management, coupled with successful implementation of strategic inventory and procurement practices.</p>
+    </section>
+    <section id="services">
+        <h2>My Services</h2>
+        <ul>
+            <li>Supply Chain Optimization</li>
+            <li>Contract Negotiation and Management</li>
+            <li>Inventory Management</li>
+            <li>Data Analysis and Reporting</li>
+            <li>ERP System Implementation</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Phone: (641) 799-8323</p>
         <p>Email: <a href="mailto:eric@ericscottllc.com">eric@ericscottllc.com</a></p>
-    </div>
+        <form action="mailto:eric@ericscottllc.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-label="Name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-label="Email"><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required aria-label="Message"></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Eric Scott LLC. All rights reserved.</p>
+    </footer>
 </body>
 </html>
